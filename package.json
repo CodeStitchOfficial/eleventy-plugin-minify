@@ -1,5 +1,5 @@
 {
-  "name": "@sherby/eleventy-plugin-files-minifier",
+  "name": "@CodeStitchOfficial/eleventy-plugin-minify",
   "version": "1.1.1",
   "description": "An Eleventy plugin to automatically minify files",
   "keywords": [
@@ -19,16 +19,16 @@
     "xml",
     "xsl"
   ],
-  "homepage": "https://github.com/ranb2002/eleventy-plugin-files-minifier#readme",
+  "homepage": "https://github.com/CodeStitchOfficial/eleventy-plugin-minify#readme",
   "bugs": {
-    "url": "https://github.com/ranb2002/eleventy-plugin-files-minifier/issues"
+    "url": "https://github.com/CodeStitchOfficial/eleventy-plugin-minify/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ranb2002/eleventy-plugin-files-minifier.git"
+    "url": "git+https://github.com/CodeStitchOfficial/eleventy-plugin-minify.git"
   },
   "license": "MIT",
-  "author": "Benjamin Rancourt",
+  "author": "Ethan Hawes",
   "main": ".eleventy.js",
   "files": [
     ".eleventy.js",
@@ -44,7 +44,7 @@
     "update": "ncu -u && npm i && npm audit fix"
   },
   "dependencies": {
-    "html-minifier": "^4.0.0",
+    "html-minifier-terser": "^7.2.0",
     "pretty-data": "^0.40.0"
   },
   "devDependencies": {
@@ -52,7 +52,7 @@
     "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-markdown": "^2.2.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "npm-check-updates": "^11.8.5",
+    "npm-check-updates": "^17.1.11",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.4.1",
     "prettier-config-udes": "1.0.2"

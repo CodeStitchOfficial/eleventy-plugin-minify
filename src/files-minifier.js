@@ -1,5 +1,5 @@
-const htmlmin = require("html-minifier");
-const { pd: prettyData } = require("pretty-data");
+const htmlmin = require('html-minifier-terser');
+const { pd: prettyData } = require('pretty-data');
 
 module.exports = (value, outputPath) => {
   // Make sure that there is a file written before trying to minifying it
@@ -11,12 +11,12 @@ module.exports = (value, outputPath) => {
   const pathEndBy = (extension) => outputPath.includes(extension);
 
   // CSS
-  if (pathEndBy(".css")) {
+  if (pathEndBy('.css')) {
     return prettyData.cssmin(value);
   }
 
   // HTML and XSL
-  if (pathEndBy(".html") || pathEndBy(".xsl")) {
+  if (pathEndBy('.html') || pathEndBy('.xsl')) {
     const config = {
       collapseBooleanAttributes: true, // Omit attribute values from boolean attributes
       collapseWhitespace: true, // Collapse white space that contributes to text nodes in a document tree
@@ -32,7 +32,7 @@ module.exports = (value, outputPath) => {
       useShortDoctype: true, // Replaces the doctype with the short (HTML5) doctype
     };
 
-    if (pathEndBy(".xsl")) {
+    if (pathEndBy('.xsl')) {
       config.keepClosingSlash = true;
     }
 
@@ -40,12 +40,12 @@ module.exports = (value, outputPath) => {
   }
 
   // JSON and WebManifest
-  if (pathEndBy(".json") || pathEndBy(".webmanifest")) {
+  if (pathEndBy('.json') || pathEndBy('.webmanifest')) {
     return prettyData.jsonmin(value);
   }
 
   // XML
-  if (pathEndBy(".xml")) {
+  if (pathEndBy('.xml')) {
     return prettyData.xmlmin(value);
   }
 
