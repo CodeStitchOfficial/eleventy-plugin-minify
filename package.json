@@ -1,6 +1,6 @@
 {
-  "name": "@CodeStitchOfficial/eleventy-plugin-minify",
-  "version": "1.1.1",
+  "name": "@codestitchofficial/eleventy-plugin-minify",
+  "version": "1.1.2",
   "description": "An Eleventy plugin to automatically minify files",
   "keywords": [
     "11ty",
