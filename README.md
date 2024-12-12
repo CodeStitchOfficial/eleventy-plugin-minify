@@ -1,5 +1,8 @@
 # eleventy-plugin-files-minifier
 
+> [!NOTE]  
+> This plugin is a continuation of [eleventy-plugin-files-minifier](https://github.com/benjaminrancourt/eleventy-plugin-files-minifier) by [Benjamin Rancourt](https://github.com/benjaminrancourt/). This repo was seemingly abandoned and left projects with an unresolvable npm vulnerability. All we've done is forked the repo, updated the dependencies, and maintained this repo going forward. All credit goes where it is due!
+
 This plugin allows you to automatically **minify** files when builting with **[Eleventy](https://www.11ty.dev/)**.
 It currently supports `css`, `html`, `json`, `xml`, `xsl` and `webmanifest` files.
 
