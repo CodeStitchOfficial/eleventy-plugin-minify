@@ -12,20 +12,20 @@ even if some of them maybe some bots.
 Under the hood, this plugin use the following plugins to minify code:
 
 - [pretty-data](https://www.npmjs.com/package/pretty-data): `css`, `json`, `xml` and `webmanifest`
-- [html-minifier](https://www.npmjs.com/package/html-minifier): `html` and `xsl`
+- [html-minifier-terser](https://www.npmjs.com/package/html-minifier-terser): `html` and `xsl`
 
 ## Installation
 
 Install the dependency with NPM:
 
 ```shell script
-npm install @sherby/eleventy-plugin-files-minifier --save-dev
+npm install @codestitchofficial/eleventy-plugin-minify --save-dev
 ```
 
 Open up your Eleventy config file (probably `.eleventy.js`) and use `addPlugin`:
 
 ```javascript
-const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
+const eleventyPluginFilesMinifier = require("@codestitchofficial/eleventy-plugin-minify");
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
 };
